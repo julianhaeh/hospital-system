@@ -307,7 +307,6 @@ public class HospitalServiceIntegrationTest {
 		
 		RegistrationId regId = new RegistrationEntity.RegistrationId(patientId, hospitalId);
 		assertThat(registrationRepo.existsById(regId)).isTrue();
-		assertThat(false).isTrue();
 		// --- 4) List Hospitals of Patient ---
 		ListHospitalsRequest listReq = ListHospitalsRequest.newBuilder()
 			.setPatientId(patientId)
